@@ -1,4 +1,7 @@
 spring:
+  jackson:
+    serialization:
+      write-date-keys-as-timestamps: false
   application:
     name: auth-service
   datasource:
@@ -14,5 +17,12 @@ spring:
       format_sql: true
     open-in-view: true
 server:
-  port: 8083
+  port: 8080
+
+authentication:
+  signing-key: tafadzwa
+  jwt-expiration-time: 1000000
+
+
+
 

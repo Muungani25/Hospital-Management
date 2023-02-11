@@ -16,7 +16,5 @@ public class Role {
     @Enumerated(EnumType.STRING)
     @Column
     private ERole name;
-    public ERole getName() {
-        return name;
-    }
+
 }
